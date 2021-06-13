@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
+    "types": ["reflect-metadata"],
+    "noImplicitAny": true, // 不能有any
+    "strict": true, // 严格模式
+    "noImplicitThis": true, // 不能使用this
+    "strictNullChecks": true, // null检查
+    "experimentalDecorators": true, // 支持装饰器
+    "emitDecoratorMetadata": true // reflect-metadata
+    // "strictPropertyInitialization": false
+  }
+}

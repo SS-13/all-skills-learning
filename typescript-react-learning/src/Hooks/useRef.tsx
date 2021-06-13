@@ -8,10 +8,12 @@ const App = (): React.ReactNode => {
     // if (!divRef.current) {
     //   throw new Error("对象不可用");
     // }
-    intervalRef.current = setInterval(() => {}, 300);
+    intervalRef.current = setInterval(() => {}, 300) as unknown as number;
     console.log(divRef.current.hidden);
 
-    return () => clearInterval(intervalRef.current);
+    return () => {
+      clearInterval(intervalRef.current as unknown as number);
+    };
   });
 
   return <div ref={divRef}>etc</div>;
